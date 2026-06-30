@@ -1,0 +1,6 @@
+{
+  "name": "HSBJK Studio",
+  "description": "Premium software and developer hub of Himanshu Sharma (HSBJK) - AI/ML Student, Full Stack Developer, and Founder of HSBJK Pvt LTD.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
