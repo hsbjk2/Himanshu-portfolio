@@ -111,7 +111,7 @@ export default function Footer({ isDarkMode }: FooterProps) {
       {/* Copyright branding details */}
       <div className="max-w-7xl mx-auto mt-12 pt-8 border-t border-slate-800/10 flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-mono text-slate-500 relative z-10">
         <p>
-          &copy; {currentYear} HSBJK Pvt LTD. All Rights Reserved.
+          &copy; {currentYear} HSBJK. All Rights Reserved.
         </p>
         <div className="flex items-center space-x-1.5">
           <span>Engineered with React & Tailwind</span>

@@ -120,7 +120,7 @@ export default function Navbar({ isDarkMode, setIsDarkMode }: NavbarProps) {
               {personalInfo.brandName}
             </span>
             <span className="font-mono text-[9px] text-brand-cyan tracking-widest uppercase">
-              Pvt LTD
+             
             </span>
           </div>
         </button>
