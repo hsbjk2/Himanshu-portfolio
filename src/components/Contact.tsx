@@ -39,11 +39,7 @@ export default function Contact({ isDarkMode }: ContactProps) {
     }
   };
 
-  const handleSubmit = (e: FormEvent) => {console.log("BUTTON CLICKED");
-    e.preventDefault();
-    if (!validate()) return;
-
-    const handleSubmit = async (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
   console.log("BUTTON CLICKED");
 
   e.preventDefault();
@@ -53,17 +49,19 @@ export default function Contact({ isDarkMode }: ContactProps) {
   setIsSubmitting(true);
 
   try {
-    await emailjs.send(
+    const response = await emailjs.send(
       'service_rbcmch9',
       'template_rwkv1un',
       {
         name: formData.name,
         email: formData.email,
-        subject: formData.subject,
+        subject: formData.subject || 'Portfolio Contact',
         message: formData.message,
       },
       'i2mol9Q-Xzxt3rQc0'
     );
+
+    console.log('SUCCESS', response);
 
     setSubmitSuccess(true);
 
@@ -79,13 +77,12 @@ export default function Contact({ isDarkMode }: ContactProps) {
     }, 5000);
 
   } catch (error) {
-    console.error(error);
-    alert('Failed to send message.');
+    console.error('EMAILJS ERROR:', error);
+    alert('Failed to send message. Check console.');
   }
 
   setIsSubmitting(false);
 };
-
   const getContactIcon = (platform: string) => {
     switch (platform.toLowerCase()) {
       case 'github':
