@@ -78,7 +78,7 @@ export default function About({ isDarkMode }: AboutProps) {
               className="relative w-full max-w-md aspect-[4/5] rounded-[2rem] overflow-hidden group shadow-2xl border border-white/5"
             >
               <img
-                src="input_file_3.png"
+                src="/images/gallery/gallery_1.png"
                 alt="Workspace Split"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"
