@@ -5,7 +5,7 @@ export default function CustomCursor() {
   const [trailPosition, setTrailPosition] = useState({ x: -100, y: -100 });
   const [isHovered, setIsHovered] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
-  const [isMobile, setIsMobile] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
 
   const requestRef = useRef<number | null>(null);
 
@@ -27,20 +27,18 @@ export default function CustomCursor() {
 
     // Listen to hovering state on interactive items
     const handleMouseOver = (e: MouseEvent) => {
-      const target = e.target as HTMLElement;
-      if (
-        target.tagName === 'A' ||
-        target.tagName === 'BUTTON' ||
-        target.closest('a') ||
-        target.closest('button') ||
-        target.closest('[role="button"]') ||
-        target.tagName === 'INPUT' ||
-        target.tagName === 'TEXTAREA'
-      ) {
-        setIsHovered(true);
-      } else {
-        setIsHovered(false);
-      }
+  const target = e.target as HTMLElement;
+
+  if (
+    target.closest('a') ||
+    target.closest('button') ||
+    target.closest('[role="button"]') ||
+    target.closest('.cursor-hover')
+  ) {
+    setIsHovered(true);
+  } else {
+    setIsHovered(false);
+  }
     };
 
     window.addEventListener('mousemove', handleMouseMove);
@@ -89,7 +87,7 @@ export default function CustomCursor() {
       {/* Outer soft circle that trails */}
       <div
         id="cursor-outer-trail"
-        className={`fixed top-0 left-0 w-8 h-8 rounded-full pointer-events-none -translate-x-1/2 -translate-y-1/2 z-50 transition-all duration-150 border ease-out ${
+        className={`fixed top-0 left-0 w-8 h-8 rounded-full pointer-events-none -translate-x-1/2 -translate-y-1/2 z-[9999] transition-all duration-150 border ease-out ${
           isHovered
             ? 'w-12 h-12 border-brand-cyan bg-brand-cyan/10 blur-[1px]'
             : 'border-brand-purple/40 bg-brand-purple/5'
@@ -103,7 +101,7 @@ export default function CustomCursor() {
       {/* Inner sharp pointer dot */}
       <div
         id="cursor-inner-dot"
-        className={`fixed top-0 left-0 w-1.5 h-1.5 rounded-full pointer-events-none -translate-x-1/2 -translate-y-1/2 z-50 transition-transform duration-100 ease-out ${
+        className={`fixed top-0 left-0 w-1.5 h-1.5 rounded-full pointer-events-none -translate-x-1/2 -translate-y-1/2 z-[9999] transition-transform duration-100 ease-out ${
           isHovered ? 'scale-150 bg-brand-cyan' : 'bg-brand-purple'
         }`}
         style={{
