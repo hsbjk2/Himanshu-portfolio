@@ -117,7 +117,7 @@ export const projectsData: Project[] = [
     tags: ["HTML5", "CSS3", "JavaScript", "Responsive UI"],
     link: "https://hsbjk2.github.io/CalcLogic-Official-Page-/",
     github: "https://github.com/hsbjk2/calclogic",
-    image: "/images/Calclogic.png",
+    image: "/images/Banner2.png",
     category: "tool",
     isFeatured: false
   },
