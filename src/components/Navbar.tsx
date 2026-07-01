@@ -107,10 +107,10 @@ export default function Navbar({ isDarkMode, setIsDarkMode }: NavbarProps) {
         >
           <div className="relative w-10 h-10 rounded-xl overflow-hidden glass-panel-dark flex items-center justify-center border border-white/10 transition-transform duration-300 group-hover:scale-105">
             <img
-              src="input_file_0.png"
-              alt="Logo"
-              className="w-8 h-8 object-contain rounded-lg"
-              referrerPolicy="no-referrer"
+            src="/images/HSBJK_Logo.png"
+            alt="HSBJK Logo"
+            className="w-8 h-8 object-contain"
+ 
             />
           </div>
           <div className="flex flex-col text-left">

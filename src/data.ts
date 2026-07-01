@@ -26,8 +26,8 @@ export const personalInfo = {
   instagram: "https://www.instagram.com/himanshubajekan/",
   logoIcon: "/images/HSBJK_Logo.png", // Monogram logo on white
   logoText: "input_file_1.png", // Monogram logo with HSBJK text
-  profilePic: "/images/hero.png", // Portrait photo
-  splitPic: "/images/desk.png", // Split workspace photo
+  profilePic: "/images/PHOTO 2.jpg", // Portrait photo
+  splitPic: "/images/gallery/gallery_2.png", // Split workspace photo
   resumeUrl: "#" // Will generate a beautiful dynamic digital resume printable modal or download link!
 };
 
@@ -186,45 +186,22 @@ export const socialLinks: SocialLink[] = [
 // You can add, edit, or remove pictures/images directly in this array.
 // Available categories: 'profile', 'workspace', 'activities'
 export const galleryData: GalleryItem[] = [
+ {
+    id:"1",
+    title:"My Workspace",
+    description:"HSBJK Workspace",
+    url:"/images/gallery/gallery_1.jpg",
+    category:"workspace",
+    createdAt:"2026"
+},
   {
-    id: 'profile-main',
-    title: 'Founder & CEO Portrait',
-    description: 'Official portrait of Himanshu Sharma, captured for corporate releases.',
-    url: 'input_file_2.png',
-    category: 'profile',
-    createdAt: 'June 2026'
-  },
-  {
-    id: 'workspace-main',
-    title: 'Cognitive Development Center',
-    description: 'Workspace setup where machine learning models and full-stack software suites are designed.',
-    url: 'input_file_3.png',
-    category: 'workspace',
-    createdAt: 'May 2026'
-  },
-  {
-    id: 'ai-matrix',
-    title: 'Neural Synthesizers',
-    description: 'Generative matrix art symbolizing statistical deep learning networks.',
-    url: 'https://images.unsplash.com/photo-1677442136019-21780efad99a?q=80&w=600&auto=format&fit=crop',
-    category: 'activities',
-    createdAt: 'April 2026'
-  },
-  {
-    id: 'workspace-terminal',
-    title: 'Custom Keyboard & Monitors',
-    description: 'Macro mechanical keyboards configured for highly dense code-flow efficiency.',
-    url: 'https://images.unsplash.com/photo-1618401471353-b98aedd07871?q=80&w=600&auto=format&fit=crop',
-    category: 'workspace',
-    createdAt: 'March 2026'
-  },
-  {
-    id: 'quantum-computing',
-    title: 'Quantum Grid Visualizer',
-    description: 'Interactive telemetry matrix used to log server-side performance vectors.',
-    url: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=600&auto=format&fit=crop',
-    category: 'activities',
-    createdAt: 'June 2026'
-  }
+    id:"2",
+    title:"My Profile",
+    description:"Founder of HSBJK",
+    url:"/images/gallery/gallery_2.jpg",
+    category:"profile",
+    createdAt:"2026"
+},
+ 
 ];
 

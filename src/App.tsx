@@ -17,7 +17,7 @@ import Footer from './components/Footer';
 import CustomCursor from './components/CustomCursor';
 
 export default function App() {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading,] = useState(true);
   const [isDarkMode, setIsDarkMode] = useState(true);
   const [showScrollTop, setShowScrollTop] = useState(false);
 
@@ -59,11 +59,9 @@ export default function App() {
       {/* Interactive Custom Trailing Cursor */}
       <CustomCursor />
 
-      {/* Numerical Loading Reveal Animation */}
-      <LoadingScreen onComplete={() => setIsLoading(false)} />
-
+   
       <AnimatePresence>
-        {!isLoading && (
+        { (
           <motion.div
             id="app-root-container"
             initial={{ opacity: 0 }}

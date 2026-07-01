@@ -53,7 +53,7 @@ export default function Footer({ isDarkMode }: FooterProps) {
         <div className="flex items-center space-x-3 text-left">
           <div className="w-10 h-10 rounded-xl overflow-hidden glass-panel-dark flex items-center justify-center border border-white/5 shadow-md">
             <img
-              src="input_file_0.png"
+              src="/images/HSBJK_Logo.png"
               alt="Logo"
               className="w-8 h-8 object-contain rounded-lg"
               referrerPolicy="no-referrer"
@@ -63,7 +63,7 @@ export default function Footer({ isDarkMode }: FooterProps) {
             <h4 className={`font-display font-extrabold text-base tracking-wide leading-none ${
               isDarkMode ? 'text-white' : 'text-slate-950'
             }`}>
-              HSBJK Pvt LTD
+              HSBJK
             </h4>
             <span className="font-mono text-[9px] text-brand-cyan tracking-widest uppercase">
               COGNITIVE DEVELOPMENT GROUP
