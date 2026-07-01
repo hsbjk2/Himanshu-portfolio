@@ -16,7 +16,7 @@ export default function About({ isDarkMode }: AboutProps) {
     {
       icon: <Briefcase className="w-6 h-6 text-brand-purple" />,
       title: "Venture Building",
-      description: "As Founder & CEO of HSBJK Pvt LTD, building scalable software ecosystems, designing web products, and steering startup strategy from concept to production."
+      description: "As Founder & CEO of HSBJK, building scalable software ecosystems, designing web products, and steering startup strategy from concept to production."
     },
     {
       icon: <Eye className="w-6 h-6 text-brand-indigo" />,
@@ -88,7 +88,7 @@ export default function About({ isDarkMode }: AboutProps) {
               {/* Floating detail tag */}
               <div className="absolute bottom-6 left-6 right-6 p-4 rounded-xl glass-panel-dark border border-white/10 flex items-center justify-between">
                 <div className="flex flex-col text-left">
-                  <span className="font-display font-extrabold text-sm text-white">HSBJK Pvt LTD</span>
+                  <span className="font-display font-extrabold text-sm text-white">HSBJK</span>
                   <span className="text-[10px] text-brand-cyan font-mono tracking-widest uppercase">Global Headquarters</span>
                 </div>
                 <div className="w-9 h-9 rounded-lg bg-brand-cyan/10 flex items-center justify-center text-brand-cyan border border-brand-cyan/20">

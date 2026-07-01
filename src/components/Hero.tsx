@@ -122,7 +122,7 @@ export default function Hero({ isDarkMode }: HeroProps) {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight bg-gradient-to-r from-brand-cyan via-brand-purple to-brand-indigo bg-clip-text text-transparent"
             >
-              Founder of HSBJK Pvt LTD
+              Founder of HSBJK
             </motion.h2>
           </div>
 
