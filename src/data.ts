@@ -77,6 +77,18 @@ export const projectsData: Project[] = [
     isFeatured: true
   },
   {
+    id: "Cam-Audit",
+    title: "CamAudit",
+    description: "CamAudit is a privacy-first webcam testing tool that helps you check your camera, microphone, video quality, FPS, resolution, lighting, permissions, and device capabilities instantly in your browser.
+",
+    tags: ["React", "TypeScript", "Vite", "Tailwind CSS", "Three.js", "Web APIs"],
+    link: "https://camaudit.vercel.app/",
+    github: "https://github.com/hsbjk2/CamAudit",
+    image: "/images/CamAuditB.png",
+    category: "web",
+    isFeatured: true
+  },
+  {
     id: "HSBJK-Video-Studio",
     title: "HSBJK Video Studio",
     description: "A multimedia platform hosted on GitHub that organizes video content and demonstrates structured web design and deployment.",
