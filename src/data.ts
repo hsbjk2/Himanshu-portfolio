@@ -66,6 +66,27 @@ export const skillsData: Skill[] = [
 
 export const projectsData: Project[] = [
   {
+  id: "calcaura",
+  title: "CALCAURA",
+  description: "A comprehensive mathematics and STEM learning platform designed for students, educators, and engineering learners. Features interactive calculators, step-by-step mathematical solutions, graphing and geometry tools, scientific computing, class-wise learning (Classes 1–12), interactive math playground, digital whiteboard, and personalized learning history. Built with a privacy-first approach, featuring client-side mathematical computation and a modern learning workspace.",
+  tags: [
+    "React",
+    "TypeScript",
+    "Vite",
+    "Tailwind CSS",
+    "Framer Motion",
+    "KaTeX",
+    "Clerk",
+    "Supabase",
+    "Lucide React"
+  ],
+  link: "https://calcaura.vercel.app/",
+  github: "https://github.com/hsbjk2/calcaura",
+  image: "/images/CalcAura.png",
+  category: "web",
+  isFeatured: true
+},
+  {
     id: "qr-cloud",
     title: "QR Cloud",
     description: "Advanced QR code generation and management platform featuring dynamic QR generation, real-time analytics, secure user authentication, and persistent cloud storage. Developed for modern businesses looking to track high-performance campaigns.",
